@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+ html, body{
+    background-color: #f1f;
+    
+}
+
+/* canvas {
+    touch-action:none;
+} */
+
+/* CardStage.css */
+.purple-card {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  transform: translateY(-50%);
+  width: clamp(20rem, 45vw, 40.625rem);
+  height: clamp(18rem, 40vw, 31.25rem);
+  border-radius: 32px;
+  padding: 24px;
+  color: #fff;
+  z-index: 1;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;  */
+}
+
+@media (max-width: 1024px) {
+  .purple-card {
+    left: 0;
+    width: 100%;
+    height: clamp(13rem, 36vw, 22rem);
+    /* transform: translateY(-50%); */
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .purple-card {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(50%);
+    width: 100%;
+    height: 12rem;
+  }
+}
+
+.white-card {
+  position: absolute;
+  /* width: 100%; */
+  left: 20rem;
+  top: 40%;
+  transform: translateY(-50%);
+  width: clamp(20rem, 45vw, 40.625rem); /* 650px max */
+  min-height: clamp(18rem, 40vw, 31.25rem); /* 500px max */
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .white-card {
+    left: 5%;
+    width: clamp(18rem, 55vw, 30rem);
+    height: 60%;
+    weight: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .white-card {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    height: 65%;
+    flex-direction: row;
+    gap: 6px;
+    padding: 15px;
+
+    /* background: red; */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* background */
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #4CB8B6;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  animation: move linear infinite;
+}
+
+.ball:nth-child(odd) {
+    color: #006D5B;
+}
+
+.ball:nth-child(even) {
+    color: #FF6F61;
+}
+
+/* Using a custom attribute for variability */
+.ball:nth-child(1) {
+  top: 77%;
+  left: 88%;
+  animation-duration: 40s;
+  animation-delay: -3s;
+  transform-origin: 16vw -2vh;
+  box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
+}
+.ball:nth-child(2) {
+  top: 42%;
+  left: 2%;
+  animation-duration: 53s;
+  animation-delay: -29s;
+  transform-origin: -19vw 21vh;
+  box-shadow: -40vmin 0 5.17594621519026vmin currentColor;
+}
+.ball:nth-child(3) {
+  top: 28%;
+  left: 18%;
+  animation-duration: 49s;
+  animation-delay: -8s;
+  transform-origin: -22vw 3vh;
+  box-shadow: 40vmin 0 5.248179047256236vmin currentColor;
+}
+.ball:nth-child(4) {
+  top: 50%;
+  left: 79%;
+  animation-duration: 26s;
+  animation-delay: -21s;
+  transform-origin: -17vw -6vh;
+  box-shadow: 40vmin 0 5.279749632220298vmin currentColor;
+}
+.ball:nth-child(5) {
+  top: 46%;
+  left: 15%;
+  animation-duration: 36s;
+  animation-delay: -40s;
+  transform-origin: 4vw 0vh;
+  box-shadow: -40vmin 0 5.964309466052033vmin currentColor;
+}
+.ball:nth-child(6) {
+  top: 77%;
+  left: 16%;
+  animation-duration: 31s;
+  animation-delay: -10s;
+  transform-origin: 18vw 4vh;
+  box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
+}
+.ball:nth-child(7) {
+  top: 22%;
+  left: 17%;
+  animation-duration: 55s;
+  animation-delay: -6s;
+  transform-origin: 1vw -23vh;
+  box-shadow: -40vmin 0 5.703026794398318vmin currentColor;
+}
+.ball:nth-child(8) {
+  top: 41%;
+  left: 47%;
+  animation-duration: 43s;
+  animation-delay: -28s;
+  transform-origin: 25vw -3vh;
+  box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
+}
