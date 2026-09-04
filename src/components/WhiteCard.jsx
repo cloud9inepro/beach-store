@@ -59,7 +59,7 @@ export default function WhiteCard() {
 
   return (
     <div
-      className="white-card"
+      className="white-card bg-white backdrop-blur-lg"
       style={{
         pointerEvents: 'auto',
       }}

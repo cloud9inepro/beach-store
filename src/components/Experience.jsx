@@ -36,17 +36,17 @@ const isTablet = width >= 768 && width < 1200;
           // rotation={[0, Math.PI / 1, 0]}
         >
       
-      <group position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -0.3 : isTablet ? 0 : -0.3, isMobile ? 1.5 : isTablet ? 3 : 5]}
+      <group position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -0.3 : isTablet ? -0.4 : -0.3, isMobile ? 1.5 : isTablet ? 3 : 5]}
             rotation={[0, 0, 0]}
        >
         <Couch
           scale={isMobile ? 0.25 : isTablet ? 0.18 : 0.4}
-          position={[isMobile ? 0.6 : isTablet ? 0 : 1.2, isMobile ? 0 : isTablet ? 0 : -0.199, isMobile ? 0.1 : isTablet ? 0 : -0.4,]}
+          position={[isMobile ? 0.6 : isTablet ? 0.4 : 1.2, isMobile ? 0 : isTablet ? -0.1 : -0.199, isMobile ? 0.1 : isTablet ? -0.2 : -0.4,]}
           rotation={[0, -0, 0]}
         />
         <FlowerPot
           scale={isMobile ? 0.014 : isTablet ? 0.01 : 0.017}
-          position={[isMobile ? 0.25 : isTablet ? 0 : 0.6, isMobile ? 0 : isTablet ? 0 : -0.06, isMobile ? -0.2 : isTablet ? 0 : -0.5,]}
+          position={[isMobile ? 0.25 : isTablet ? 0.12 : 0.6, isMobile ? 0 : isTablet ? 0 : -0.06, isMobile ? -0.2 : isTablet ? -0.2 : -0.5,]}
           rotation={[0, 0, 0]}
         />
 
@@ -68,7 +68,7 @@ const isTablet = width >= 768 && width < 1200;
 
          {/* Floor  */}
       <mesh 
-      position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -3 : isTablet ? 0 : -0.5, isMobile ? 0 : isTablet ? 0 : 9,]}
+      position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -3 : isTablet ? -3.5 : -0.5, isMobile ? 0 : isTablet ? 0 : 9,]}
        rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[10, 10]} />
         <meshStandardMaterial

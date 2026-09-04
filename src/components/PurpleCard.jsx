@@ -4,6 +4,8 @@ import { useRef, useEffect, useState } from 'react'
 import { useAtom } from 'jotai'
 import gsap from 'gsap'
 import { slideIndexAtom, slides } from './hooks/store'
+import GearImage from "./GearImage"
+
 
 export default function PurpleCard() {
 const [slideIndex] = useAtom(slideIndexAtom)
@@ -51,7 +53,7 @@ duration: 0.8,
     scale: 1   
 },  
     {opacity: 1,
-     scale: 3,
+     scale: isTablet ? 2 : 3,
      duration: 1,
      ease: 'circ.inOut'
 
@@ -61,7 +63,7 @@ duration: 0.8,
     scaleY: 1   
 },  
     {
-     scaleY: 3,
+     scaleY: isTablet ? 2 : 3,
      duration: 1,
      stagger: 0.1,
      transformOrigin: "bottom",
@@ -82,19 +84,22 @@ return (
   }}
   ref={cardRef}
 >
-  <div ref={contentRef} className='flex  flex-row md:flex-col  md:ml-18 md:gap-30 ' >
+  <div ref={contentRef} className='flex  flex-row md:justify-between lg:flex-col  lg:ml-18 lg:gap-30 ' >
     
+    {/* <div>
+      <GearImage/>
+    </div> */}
     <div
-      className="circle w-18 h-18 hidden md:block rounded-full mt-18 ml-8 shadow-lg"
+      className="circle w-18 h-18 hidden md:block rounded-full md:mt-7 lg:mt-18 ml-8 shadow-lg"
       style={{background: slide.circleColor }}
     />
 
-    <div className='text-xl font-bold'>
+    <div className='text-xl mt-6 md:mt-20 lg:mt-0  z-30 font-bold'>
       {slide.stationName}
     </div>
 
     <div
-      className="bars-wrapper flex gap-2 mt-auto "
+      className="bars-wrapper flex gap-2 lg:mt-auto mt-23"
       style={{ alignItems: 'end' }}
     >
       {[20, 32, 44, 20].map((h, i) => (

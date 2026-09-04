@@ -18,6 +18,7 @@ export const slides = [
     circleColor: '#F5C518',
     description2: 'Experience the serenity of paddleboarding on calm waters.',
     image: '/images/paddle.webp',
+    gearImage: '/images/bg-paddle2.webp',
   },
   {
     id: 'kite-boarding',
@@ -31,6 +32,7 @@ export const slides = [
     cardColor: '#4C6FE8',
     circleColor: '#abcfb0',
     image: '/images/kite.webp',
+    gearImage: '/images/bg-para.webp',
   },
 {
     id: 'wind-surfing',
@@ -44,6 +46,7 @@ export const slides = [
     cardColor: '#00A896',
     circleColor: '#8d83be',
     image: '/images/windsurf.webp',
+    gearImage: '/images/bg-surf.webp',
   },
   {
     id: 'scuba-diving',
@@ -57,6 +60,8 @@ export const slides = [
     cardColor: '#028090',
     circleColor: '#8d83be',
     image: '/images/scuba.webp',
+    gearImage: '/images/bg-scuba.webp',
+    
   },
   {
     id: 'sea-kayaking',
@@ -70,6 +75,7 @@ export const slides = [
     cardColor: '#05668D',
     circleColor: '#70058d',
     image: '/images/kayaking.webp',
+    gearImage: '/images/bg-kayak.webp',
   },
 
 // add remaining 2-3 slides here, same shape

@@ -39,7 +39,7 @@ export default function NavRail() {
   }, [slideIndex])
 
   return (
-    <div className="absolute top-1/2 left-6 md:left-10 -translate-y-1/2 flex flex-col gap-4 md:gap-5 z-30 pointer-events-auto">
+    <div className="absolute hidden lg:block top-1/2 left-6 md:left-10 -translate-y-1/2 flex flex-col gap-4 md:gap-5 z-30 pointer-events-auto">
       <div
         ref={highlightRef}
         className="absolute top-0 left-0 w-12 h-12 rounded-xl"

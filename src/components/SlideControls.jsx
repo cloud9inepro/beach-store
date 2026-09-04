@@ -31,7 +31,7 @@ setTimeout(() => setIsTransitioning(false), TRANSITION_DURATION)
 
 return (
 <div
-className="bottom-8 md:bottom-0 md:top-20 md:right-20"
+className="bottom-8 md:top-240  lg:bottom-0 lg:top-20 lg:right-20"
 style={{
 position: 'absolute',
 // top: '48px',
