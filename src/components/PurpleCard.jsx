@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import { useAtom } from 'jotai'
 import gsap from 'gsap'
 import { slideIndexAtom, slides } from './hooks/store'
-import GearImage from "./GearImage"
+
 
 
 export default function PurpleCard() {
@@ -39,7 +39,6 @@ duration: 0.8,
 })
 // card slides back in with new content already swapped
 .to(cardRef.current, {
-  //  x: isMobile ? 0 : isTablet ? 0 : 0, 
  y: isMobile ? 100 : isTablet ? 100 : 0, 
 x: 0,
 // y: 100,
@@ -86,9 +85,7 @@ return (
 >
   <div ref={contentRef} className='flex  flex-row md:justify-between lg:flex-col  lg:ml-18 lg:gap-30 ' >
     
-    {/* <div>
-      <GearImage/>
-    </div> */}
+    
     <div
       className="circle w-18 h-18 hidden md:block rounded-full md:mt-7 lg:mt-18 ml-8 shadow-lg"
       style={{background: slide.circleColor }}

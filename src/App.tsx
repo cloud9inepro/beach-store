@@ -8,6 +8,7 @@ import SlideControls from "./components/SlideControls"
 import IntroOverlay from "./components/IntroOverlay"
 import NavRail from "./components/NavRail"
 import GearImage from "./components/GearImage"
+// import EffectBurst from "./components/EffectBurst"
 
 export default function App() {
   const mainRef = useRef(null);
@@ -20,6 +21,7 @@ export default function App() {
     <main ref={mainRef}>
       <div className="relative w-screen h-screen">
         <GearImage/>
+        {/* <EffectBurst/> */}
         <div
           className="card-holder absolute lg:left-[20%] w-screen lg:w-0 p-5  lg:p-0 top-[-50px] lg:top-0 h-full z-10 pointer-events-none"
         >

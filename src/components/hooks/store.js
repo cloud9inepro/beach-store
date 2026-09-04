@@ -5,7 +5,7 @@ export const isTransitioningAtom = atom(false)
 export const hasEnteredAtom = atom(false)
 
 export const slides = [
-{
+  {
     id: 'paddle-surf',
     time: '10:30 AM',
     title: 'PADDLE\nSURF',
@@ -16,9 +16,10 @@ export const slides = [
     stationName: 'Station Lighthouse',
     cardColor: '#6C4CE8',
     circleColor: '#F5C518',
-    description2: 'Experience the serenity of paddleboarding on calm waters.',
+    description2: 'Glide gracefully along scenic shorelines while building balance and taking in serene ocean views.',
     image: '/images/paddle.webp',
     gearImage: '/images/bg-paddle2.webp',
+    effect: 'splash',
   },
   {
     id: 'kite-boarding',
@@ -31,10 +32,12 @@ export const slides = [
     stationName: 'Station Watchtower',
     cardColor: '#4C6FE8',
     circleColor: '#abcfb0',
+    description2: 'Harness the power of strong coastal winds to launch high jumps and skim across open waters.',
     image: '/images/kite.webp',
     gearImage: '/images/bg-para.webp',
+    effect: 'wind',
   },
-{
+  {
     id: 'wind-surfing',
     time: '07:00 AM',
     title: 'WIND\nSURFING',
@@ -45,8 +48,10 @@ export const slides = [
     stationName: 'Station Pier',
     cardColor: '#00A896',
     circleColor: '#8d83be',
+    description2: 'Master the elements as you carve through gentle swells powered by steady morning breezes.',
     image: '/images/windsurf.webp',
     gearImage: '/images/bg-surf.webp',
+    effect: 'wind',
   },
   {
     id: 'scuba-diving',
@@ -59,9 +64,10 @@ export const slides = [
     stationName: 'Station Reef',
     cardColor: '#028090',
     circleColor: '#8d83be',
+    description2: 'Descend into crystal-clear depths to explore vibrant coral ecosystems and marine life up close.',
     image: '/images/scuba.webp',
     gearImage: '/images/bg-scuba.webp',
-    
+    effect: 'bubbles',
   },
   {
     id: 'sea-kayaking',
@@ -74,9 +80,9 @@ export const slides = [
     stationName: 'Station Harbour',
     cardColor: '#05668D',
     circleColor: '#70058d',
+    description2: 'Paddle through hidden sea caverns and steep limestone cliffs along picturesque coastlines.',
     image: '/images/kayaking.webp',
     gearImage: '/images/bg-kayak.webp',
+    effect: 'ripple',
   },
-
-// add remaining 2-3 slides here, same shape
 ]

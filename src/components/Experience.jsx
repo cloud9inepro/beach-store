@@ -32,17 +32,17 @@ const isTablet = width >= 768 && width < 1200;
           ref={modelRef}
           // scale={isMobile ? 0.004 : 0.004}
 
-          position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -0.7 : isTablet ? 0 : 0, 0]}
+          position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -0.7 : isTablet ? 0 : -0.1, isMobile ? 0 : isTablet ? 0 : 0]}
           // rotation={[0, Math.PI / 1, 0]}
         >
       
-      <group position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -0.3 : isTablet ? -0.4 : -0.3, isMobile ? 1.5 : isTablet ? 3 : 5]}
+      <group position={[isMobile ? 0 : isTablet ? 0 : 0, isMobile ? -0.3 : isTablet ? -0.4 : -0.3, isMobile ? 1.5 : isTablet ? 3 : 4.7]}
             rotation={[0, 0, 0]}
        >
         <Couch
           scale={isMobile ? 0.25 : isTablet ? 0.18 : 0.4}
           position={[isMobile ? 0.6 : isTablet ? 0.4 : 1.2, isMobile ? 0 : isTablet ? -0.1 : -0.199, isMobile ? 0.1 : isTablet ? -0.2 : -0.4,]}
-          rotation={[0, -0, 0]}
+          rotation={[0, isMobile ? 0 : isTablet ? 0 : -0.1, 0]}
         />
         <FlowerPot
           scale={isMobile ? 0.014 : isTablet ? 0.01 : 0.017}
@@ -72,7 +72,7 @@ const isTablet = width >= 768 && width < 1200;
        rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[10, 10]} />
         <meshStandardMaterial
-          color="#999"
+          color="#777"
           metalness={0}
           roughness={0.95}
           
