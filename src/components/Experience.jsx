@@ -72,7 +72,7 @@ const isTablet = width >= 768 && width < 1200;
        rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[10, 10]} />
         <meshStandardMaterial
-          color="#777"
+          color="#D8C4B6"
           metalness={0}
           roughness={0.95}
           
