@@ -25,7 +25,7 @@ export default function IntroOverlay() {
   return (
     <div
       ref={overlayRef}
-      className="absolute inset-0 h-full w-full bg-white z-30 pointer-events-auto flex flex-col justify-between p-8 md:p-12"
+      className="absolute inset-0 h-dvh w-full bg-white z-30 pointer-events-auto flex flex-col justify-between p-8 md:p-12"
     >
       <div>
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
